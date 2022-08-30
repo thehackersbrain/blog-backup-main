@@ -15,7 +15,7 @@ if [[ $# == 1 ]]; then
 	git add .
 	git commit -m "$1"
 	echo -e "[$green+$reset] Committing the Changes to GitHub Completed..."
-	git push -u origin main
+	git push -u origin master
 	echo -e "[$green+$reset] Blog Updated Successfully..."
 	cd ..
 	git add . && git commit -m "$1" && git push -u origin main
