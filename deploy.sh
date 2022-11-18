@@ -11,6 +11,8 @@ if [[ $# == 1 ]]; then
 	echo -e "[$green+$reset] Production Build Completed..."
 	cp CNAME blog/
 	echo -e "[$green+$reset] CNAME File Copied Successfully..."
+	cp google971740cc91152f76.html blog/
+	echo -e "[$green+$reset] Google HTML file Copied Successfully..."
 	cd blog
 	git add .
 	git commit -m "$1"
